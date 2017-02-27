@@ -1,5 +1,14 @@
-%h1 Dashboard#index
-%p Find me in app/views/dashboard/index.html.haml
+.row
+  .col-12
+    .clearfix
+      %h1.float-left
+        Dashboard
 
-%p
-  = link_to 'Log out', destroy_user_session_url, method: :delete
+      %p.float-right
+        = link_to 'Log out', destroy_user_session_url, method: :delete, class: 'btn btn-danger'
+
+    %p
+      Welcome #{current_user.name}!
+
+    %p
+      = link_to 'Back to Homepage', root_url

@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
       subdomain = current_user.subdomain
       host = request.host_with_port.sub! "#{request.subdomain}", subdomain
 
-      redirect_to host
+      redirect_to "http://#{host}#{request.path}"
     end # if
   end # redirect_to_subdomain
 

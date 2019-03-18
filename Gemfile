@@ -39,7 +39,7 @@ gem 'pg'
 
 # User and Tenant management
 gem 'apartment'
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 
 gem 'bootstrap'
 source 'https://rails-assets.org' do

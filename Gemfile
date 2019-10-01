@@ -46,7 +46,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
-gem 'simple_form'
+gem 'simple_form', '>= 5.0.0'
 
 
 group :development, :test do
